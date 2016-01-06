@@ -10,8 +10,7 @@
 				    <div class="panel-body">
 				    	<div ng-if="numPoster === 0"> You haven't posted any Carpool request yet</div>
 			        <div ng-repeat="task in taskPoster">
-			        	<a ng-href="#/browse/{{task.taskId}}"> {{task.pickuptime}} </a>
-                                        <p>{{task.pickuplocation}}</p>
+			        	From: <a ng-href="#/browse/{{task.taskId}}">{{task.pickuplocation}} @ {{task.pickuptime}} to {{task.destination}} @ {{task.destinationtime}}</a>
 			        </div>
 				    </div>
 				</div>
@@ -24,8 +23,7 @@
 				    <div class="panel-body">
 				    	<div ng-if="numRunner === 0"> You haven't run any task yet</div>		    	
 			        <div ng-repeat="task in taskRunner">
-			        	<a ng-href="#/browse/{{task.taskId}}"> {{task.pickuptime}} </a>
-                                        <p>{{task.pickuplocation}}</p>
+			        	From: <a ng-href="#/browse/{{task.taskId}}">{{task.pickuplocation}} @ {{task.pickuptime}} to {{task.destination}} @ {{task.destinationtime}}</a>
 			        </div>
 				    </div>
 				</div>				

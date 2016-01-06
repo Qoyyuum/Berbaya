@@ -11,10 +11,10 @@
 
         <div class="panel-body">
           <form ng-submit="createTask()">              
-              <label>Pickup Date/Time</label>
+            <label>Pickup Date/Time</label>
             <input type="datetime-local" ng-model="task.pickuptime" class="form-control" placeholder="What time to pick you up?" required><br>
             <textarea ng-model="task.pickuplocation" class="form-control" placeholder="Where to pick you up?" required></textarea><br>
-            <label>Pickup Date/Time</label>
+            <label>Destination Date/Time</label>
             <input type="datetime-local" ng-model="task.destinationtime" class="form-control" placeholder="What time should you be there?"><br>
             <textarea ng-model="task.destination" class="form-control" placeholder="Where to send you?"></textarea><br>
             <input type="number" ng-model="task.total" class="form-control" placeholder="How much will you pay?" required><br>

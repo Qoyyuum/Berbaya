@@ -11,10 +11,12 @@
 
         <div class="panel-body">
           <form ng-submit="editTask(selectedTask)">            
-            <input type="text" ng-model="selectedTask.pickuptime" class="form-control" placeholder="Task title" required><br>  
-            <textarea ng-model="selectedTask.pickuplocation" row="3" class="form-control" placeholder="Describe what you need done" required></textarea><br>
-            <input type="text" ng-model="selectedTask.pickuptime" class="form-control" placeholder="Task title" required><br>  
-            <textarea ng-model="selectedTask.pickuplocation" row="3" class="form-control" placeholder="Describe what you need done" required></textarea><br>
+            <label>Pickup Date/Time</label>
+            <input type="text" ng-model="selectedTask.pickuptime" class="form-control" placeholder="What time to pick you up?" required><br>  
+            <textarea ng-model="selectedTask.pickuplocation" row="3" class="form-control" placeholder="Where to pick you up?" required></textarea><br>
+            <label>Destination Date/Time</label>
+            <input type="text" ng-model="selectedTask.destinationtime" class="form-control" placeholder="What time to get you there?" required><br>  
+            <textarea ng-model="selectedTask.destination" row="3" class="form-control" placeholder="Where do you want to go?" required></textarea><br>
             <input type="number" ng-model="selectedTask.total" class="form-control" placeholder="How much will you pay?" required><br>
             <input type="submit" value="Update" class="btn btn-info">
           </form>

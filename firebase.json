@@ -1,0 +1,9 @@
+{
+  "firebase": "carpoolbru",
+  "public": "ngantar",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

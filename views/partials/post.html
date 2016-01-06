@@ -1,0 +1,27 @@
+<div class="modal fade" id="posModal" ng-controller="TaskController">
+  <div class="modal-dialog">
+    <div class="modal-content">      
+
+      <div class="panel panel-warning title">
+
+        <div class="panel-heading title">            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>        
+            <h3 class="panel-title">Request a Carpool (FREE)</h3>
+        </div>
+
+        <div class="panel-body">
+          <form ng-submit="createTask()">              
+            <input type="datetime-local" ng-model="task.pickuptime" class="form-control" placeholder="What time to pick you up?" required><br>
+            <textarea ng-model="task.pickuplocation" class="form-control" placeholder="Where to pick you up?" required></textarea><br>
+            <input type="datetime-local" ng-model="task.destinationtime" class="form-control" placeholder="What time should you be there?" required><br>
+            <textarea ng-model="task.destination" class="form-control" placeholder="Where to send you?" required></textarea><br>
+            <input type="number" ng-model="task.total" class="form-control" placeholder="How much will you pay?" required><br>
+            <input type="submit" value="Post Now" class="btn btn-warning">
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
